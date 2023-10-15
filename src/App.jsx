@@ -30,7 +30,7 @@ function App() {
     const exist = handleBan(data);
 
     if(exist) {
-      return fetchData();
+      return setStoredData(fetchData());
     }
 
     setStoredData(data);
